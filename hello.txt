@@ -1,2 +1,3 @@
 Hello world 
 Loretta is learning Git step by step!
+Day 1: I am building strong Git habits
