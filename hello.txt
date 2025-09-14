@@ -1,1 +1,2 @@
-Hello world
+Hello world 
+Loretta is learning Git step by step!
