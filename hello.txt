@@ -3,3 +3,4 @@ Loretta is learning Git step by step!
 Day 1: "I am building strong Git habits"
 Day 2: "Each push takes me closer to mastery"
 Day 3: I can make mistakes and learn from them
+Day 4: Small daily practice creates big results
