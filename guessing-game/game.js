@@ -1,20 +1,16 @@
-const secretNumber = Math.floor(Math.random() * 10) + 1;
 
-let guess;
-let attempts = 0;
-
-// Import prompt-sync to take input from the console
-const prompt = require("prompt-sync")();
-
-while (guess !== secretNumber) {
-  guess = parseInt(prompt("Guess a number between 1 and 10: "));
-  attempts++;
-
+const readline = require("readline");
+const rl = readline.createInterface({
+   input:process.stdin,
+   output:process.stdout
+});
+const secretNumber = Math.floor(Math.random() *10) + 1;
+rl.question("Guess a number between 1 and 10:",(answer) => {
+  const guess = parseInt(answer);
   if (guess === secretNumber) {
-    console.log(`🎉 Correct! The number was ${secretNumber}. You took ${attempts} tries.`);
-  } else if (guess < secretNumber) {
-    console.log("Too low! Try again.");
-  } else if (guess > secretNumber) {
-    console.log("Too high! Try again.");
+    console.log("Correct!You guessed the Number!");
+  }else{
+    console.log(`Wrong!The secret number was ${secretNumber}.`);
   }
-}
+ rl.close();
+});
