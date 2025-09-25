@@ -14,9 +14,13 @@ rl.question("Guess a number between 1 and 10:",(answer) => {
     console.log(`Correct!You guessed the Number in ${attempts}tries.`);
     rl.close();
   }else{
-    console.log("Wrong!Try again");
-    askGuess();
-  }
-});
+    if(guess<secretNumber) {
+     console.log("Too low! Try again.");
+    } else {
+     console.log("Too high! Try again");
+    } 
+     askGuess();
+   }
+ });
 }
-askGuess();
+ askGuess();
