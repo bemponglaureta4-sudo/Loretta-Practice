@@ -19,6 +19,11 @@ rl.question("Guess a number between 1 and 10:",(answer) => {
     } else {
      console.log("Too high! Try again");
     } 
+    if(attempts>=5) {
+      console.log(`Game over!The number was ${secretNumber}.`);
+      rl.close();
+      return;
+    }
      askGuess();
    }
  });
