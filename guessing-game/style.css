@@ -10,3 +10,35 @@ p{
     color: darkred;
     font-size: 18px;
 }
+img{
+  width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+figure{
+    text-align: center;
+    margin-top: 20px;
+}
+figcaption{
+    font-style: italic;
+    color: grey;
+    margin-top: 8px;
+}
+nav{
+    background-color: #4CAF50;
+    padding: 10PX;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+nav a:hover{
+    color: yellow;   
+}
