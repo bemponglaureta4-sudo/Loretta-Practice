@@ -42,3 +42,11 @@ nav a{
 nav a:hover{
     color: yellow;   
 }
+ul, ol{
+    margin-left: 40px;
+    line-height: 1.8;
+}
+li{
+    color: #333;
+    font-size: 18px;
+}
